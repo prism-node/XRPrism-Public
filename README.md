@@ -1,165 +1,90 @@
-**Prism: The Unified XRPL Trading & Analytics Platform**
-========================================================
+# 🌐 Prism AI - XRPL Trading & Wallet Assistant
 
-**1\. Executive Summary**
--------------------------
+Prism AI is an advanced Discord bot designed to provide **AI-driven trading advice, real-time price monitoring, and seamless integration with the XRPL blockchain**. With **real-time price fetching, market trend analysis, and automated trading recommendations**, it's the ultimate tool for **XRPL MemeCoin traders**.
 
-### **What is Prism?**
+---
 
-Prism is an innovative XRPL-based platform that unifies **decentralized exchange (DEX) trading, wallet management, token analytics, and automated market maker (AMM) functionality** into a seamless, user-friendly interface.
+## 🔥 Features
 
-### **Mission Statement**
+### 📈 AI-Driven Trading Advice (`/advice`)
+- **AI-powered buy/sell recommendations** in **full Degen mode**.
+- **Market Trend Classification**:
+  - 🚀 `Mega Uptrend` (+50% in 24h)
+  - 📈 `Strong Uptrend` (+25% to +50% in 24h)
+  - 🟢 `Mild Uptrend` (+10% to +25% in 24h)
+  - 🤷 `Sideways / Neutral` (-10% to +10%)
+  - 📉 `Mild Downtrend` (-10% to -25%)
+  - 🚨 `Strong Downtrend` (-25% to -50%)
+  - ☠️ `Absolute Collapse` (-50% or more)
+- **Degen Mode Trading Recommendations**:
+  - 🚨 `"STAY THE F*** OUT!"` (if price drops >25%)
+  - 🚀 `"SEND IT! ALL IN!"` (if price pumps over 50%)
+  - ✅ `"Buy Now!"` or `"Consider Selling."` for normal conditions.
 
-*"To simplify and empower access to the XRPL ecosystem by providing tools and services for traders, developers, and everyday users while fostering decentralization through the PRISM token."*
+### 💰 Real-Time Token Price (`/price`)
+- Fetches **live** token price, market cap, and liquidity from **Dexscreener API**.
+- Provides **accurate USD and XRP price values**.
 
-### **Core Offerings**
+### ⏰ Price Alerts (`/setalert`)
+- **Set an alert** when a token hits a specific price.
+- **Get notified instantly** via DM when your target price is reached.
 
--   Aggregated Trading & Analytics: Real-time price discovery across all XRPL DEXs.
--   Integrated AMM Pool Management: One-click liquidity provision and tracking.
--   Community-Driven Growth: Users influence platform decisions via PRISM token governance.
+### 💳 XRPL Wallet Integration (`/connectwallet`)
+- **Link your XRPL wallet** to track holdings directly in Discord.
+- Fetch **wallet balance** and **all XRPL token assets**.
 
-* * * * *
+### 🔄 Transaction Tracking (`/transactions`)
+- **View recent XRPL transactions** associated with your wallet.
+- Get notified about **wallet activity in real-time**.
 
-**2\. Problem Statement**
--------------------------
+### 🔥 Hot Wallet Support (COMING SOON)
+- Users will be able to **generate temporary XRPL wallets** directly within Discord.
+- Allows users to **trade safely** without linking their **main cold wallets**.
 
-### **Challenges in the XRPL Ecosystem**
+### 🏦 XRPL Trading & Swapping (COMING SOON)
+- Users will be able to **BUY/SELL/SWAP tokens directly within Discord** using XRPL **OfferCreate**.
+- **Seamless trading execution** without leaving Discord.
 
-1.  **Fragmented Tools**
+---
 
-    -   Users often have to rely on multiple platforms to access trading, analytics, and liquidity tools.
-    -   A lack of integration creates inefficiencies and a disjointed user experience.
-2.  **Limited Transparency & Token Risk**
+## 📜 Bot Commands
 
-    -   Many tokens do not have accessible verification tools.
-    -   Without sufficient liquidity data, users are exposed to higher risks in decentralized trading.
-3.  **High Barriers for Beginners**
+### Core Commands
+| Command        | Description  |
+|---------------|-------------|
+| `/advice`     | AI-powered trading advice, including price trends and recommendations. |
+| `/price`      | Fetches **real-time** token prices, market cap, and liquidity. |
+| `/tokens`     | Displays all stored token mappings (symbol → token hash). |
 
-    -   Setting up wallets, managing trustlines, and navigating DEXs can be complex.
-    -   A lack of beginner-friendly resources limits ecosystem adoption.
-4.  **Inefficient Trading & Liquidity Constraints**
+### Alerts & Notifications
+| Command        | Description  |
+|---------------|-------------|
+| `/setalert`   | Sets a price alert for a specific token. |
+| `/listalerts` | Lists all active price alerts. |
+| `/removealert` | Removes an active price alert. |
 
-    -   The absence of liquidity aggregation leads to **poor trade execution and slippage**.
-    -   Users often face **difficulty accessing the best prices and trading opportunities**.
+### Wallet Commands
+| Command        | Description  |
+|---------------|-------------|
+| `/connectwallet` | Links your XRPL wallet to the bot for tracking. |
+| `/walletbalance` | Displays the current XRP balance of your wallet. |
+| `/walletassets`  | Fetches all tokens and balances held in your XRPL wallet. |
 
-* * * * *
+---
 
-**3\. Prism's Solution**
-------------------------
+## 🚀 Future Enhancements
+- **Auto-Trading Strategies**: AI-driven automated trading execution.
+- **Leaderboard & Statistics**: Track top XRPL traders & meme coin profits.
+- **User Settings (`/settings`)**: Toggle between **professional mode** and **full degen mode**.
+- **Hot Wallet Support**: Allow users to **create & manage XRPL wallets within Discord**.
+- **Advanced Market Analysis**: Machine-learning-driven token performance insights.
 
-### **How Prism Solves These Challenges**
+---
 
--   **Unified Trading Platform**: Aggregates liquidity across all XRPL DEXs and optimizes real-time trade execution.
--   **Wallet Management & Automation**: Simplifies wallet creation, trustline setup, and token transactions.
--   **Token Analytics & Risk Assessment**: Real-time insights into token prices, liquidity, market cap, and whale activity.
--   **AMM Pool Management**: Streamlined tools for liquidity providers, including visualized earnings and impermanent loss tracking.
+## 🎉 Contributing
+We welcome contributions to improve Prism AI! Fork the repo, make changes, and submit a pull request.
 
-* * * * *
+---
 
-**4\. The PRISM Token**
------------------------
-
-### **Overview**
-
-PRISM is the native utility token, designed to **incentivize adoption, governance, and trading efficiency** within the Prism ecosystem.
-
-### **Token Utility**
-
--   **Trading Discounts**: Pay DEX fees using PRISM for discounted rates.
--   **Governance & Community Voting**: PRISM holders vote on platform upgrades and new features.
--   **Incentive & Rewards Program**:
-    -   Liquidity providers receive PRISM rewards.
-    -   Early adopters & active users benefit from airdrops.
--   **Subscription Model**: Users can pay for Pro features at a discount using PRISM.
-
-### **Tokenomics**
-
--   **Development Fund**: 25% - Platform development and scalability.
--   **Liquidity Pools**: 30% - Seed liquidity for AMM pools.
--   **Community Rewards**: 20% - Airdrops, referrals, and staking.
--   **Staking Incentives**: 15% - Rewards for liquidity providers.
--   **Team Reserve**: 10% - Long-term growth and sustainability.
-
-* * * * *
-
-**5\. Key Features**
---------------------
-
--   **Unified DEX Aggregator**: Routes trades through multiple XRPL DEXs for the best prices.
--   **Wallet Integration**: Enables users to create and manage XRPL wallets seamlessly.
--   **AMM Pool Management**: Simplifies liquidity provision and performance tracking.
--   **Real-Time Analytics & AI Insights**: Tracks token activity, whale movements, and risk ratings.
--   **Educational & Onboarding Tools**: Step-by-step tutorials and AI-powered user guides.
-
-* * * * *
-
-**6\. Technical Architecture**
-------------------------------
-
-### **APIs & Data Sources**
-
--   **XRPL Public APIs** (Direct blockchain data access):
-    -   `account_lines`: Token discovery & holdings.
-    -   `book_offers`: Real-time order book tracking.
-    -   `account_tx`: Transaction history retrieval.
--   **Third-Party APIs**
-    -   DexScreener: Price data redundancy.
-
-### **Platform Stack**
-
--   **Frontend**: Bubble.io (rapid prototyping).
--   **Backend**: XRPL public nodes + APIs.
--   **Web3 Wallets**: Prism Wallet, XUMM integration.
-
-### **Scalability Plan**
-
--   **Phase 1**: Uses public APIs for quick deployment.
--   **Phase 2**: Custom Rippled server for higher throughput & performance.
-
-* * * * *
-
-**7\. Roadmap**
----------------
-
-### **Phase 1: MVP Launch (3--6 Months)**
-
--   Core Features: Wallet creation, DEX aggregator, AMM tools.
--   PRISM Token: Airdrop & launch of PRISM/XRP liquidity pool.
-
-### **Phase 2: Feature Expansion (6--12 Months)**
-
--   AI analytics for token risk & whale tracking.
--   Developer APIs for trading and token data.
-
-### **Phase 3: Ecosystem Growth (1--2 Years)**
-
--   Strategic partnerships with XRPL DEXs and projects.
--   Community-driven governance expansion.
-
-* * * * *
-
-**8\. Monetization Strategy**
------------------------------
-
--   **Free Core Features**: Wallet creation, trading, and basic analytics remain free.
--   **PRISM Token Utility**: PRISM fuels trading discounts, governance, and staking rewards.
--   **Pro Subscription Model (Optional)**:
-    -   Advanced analytics & developer tools behind a subscription paywall.
-    -   Discounts for paying with PRISM.
-
-* * * * *
-
-**9\. Conclusion**
-------------------
-
-### **Revolutionizing XRPL Trading & Analytics**
-
-Prism streamlines DEX trading, wallet management, and AMM tools, making the XRPL ecosystem more accessible and efficient.
-
-### **Community-Driven Growth with PRISM Token**
-
-With PRISM, users shape platform evolution while benefiting from incentives and rewards.
-
-### **Vision for the Future**
-
-Prism aims to become the premier XRPL trading and analytics hub, lowering barriers for new users and traders alike.
+## 📜 License
+Pending.
